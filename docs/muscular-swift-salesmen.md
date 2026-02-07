@@ -1,0 +1,45 @@
+---
+title: Title
+meta:
+  - name: description
+    content: Description
+attrs:
+  un-cloak: true
+icon: twemoji:page-facing-up
+---
+
+A simple :inline-component
+
+A simple :inline-component[John Doe]
+
+How to say :hello{}-world in Markdown
+
+Inline :component{key="value" key2=value2}!
+
+Inline :component and [link](https://example.com)!
+
+Inline :component[John Doe]{.cls} and _Italic_!
+
+#### Heading with :world component
+
+### :hello
+
+## :heading-component
+
+## :heading-component{data-attr="value"}
+
+# :another-component[Content]
+
+[:component[text]{.class}](/link)
+
+**:component[text]{.class}**
+
+*:component[text]{.class}*
+
+[:component[text]{.class}]
+
+:shorthand inline component
+
+:short-hand{.color} inline component
+
+:short-hand[content]{.color} inline component
