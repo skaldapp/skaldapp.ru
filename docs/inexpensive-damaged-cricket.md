@@ -26,7 +26,7 @@ script:
       }
 ---
 
-::ul{#menu.not-prose.flex-inline.flex-wrap.gap-8.w-full.text-sm.border-b-2.py-4.mt-2.mb-24.font-medium}
+::ul{#menu.not-prose.flex-inline.flex-wrap.gap-3.w-full.text-sm.border-b-2.py-4.mt-2.mb-24.font-medium}
 
 * [SK<i-fa7-solid-mountain align-text-bottom size-5/>LD](/)
 
