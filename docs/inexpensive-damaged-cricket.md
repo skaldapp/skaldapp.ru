@@ -44,7 +44,7 @@ script:
 
 ::
 
-<RouterView v-slot="{ Component }"><component :is="Component" v-if="Component" /><template v-else>
+<RouterView v-slot="{ Component }"><component :is="Component" v-if="Component" /><div v-else>
 
 # SKALD{.text-center}
 
@@ -345,7 +345,7 @@ function removeTodo(todo) {
 
 Начните творить, создавать и развивать свои проекты **уже сегодня**! Skald – это ваш **надежный спутник** в мире текстов и веб-разработки 🌍💖.
 
-</template></RouterView>
+</div></RouterView>
 
 <script setup lang="ts">
 import { getCurrentInstance, ref, computed } from "vue";
@@ -383,7 +383,8 @@ function removeTodo(todo) {
 </script>
 
 <style>
-@import url("https://cdn.jsdelivr.net/npm/element-plus@2/dist/index.css");
+@import url("https://cdn.jsdelivr.net/npm/element-plus@2/theme-chalk/index.css");
+@import url("https://cdn.jsdelivr.net/npm/element-plus@2/theme-chalk/dark/css-vars.css");
 
 :root {
   --nord0: #2E3440;
