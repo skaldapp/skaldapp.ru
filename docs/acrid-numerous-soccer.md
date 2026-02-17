@@ -1,9 +1,39 @@
 ---
 title: Title
-meta:
-  - name: description
-    content: Description
+description: Description
 icon: twemoji:page-facing-up
+attrs:
+  un-cloak: true
 ---
 
-Fusce eu magna urna. Donec placerat sapien at fringilla convallis. Etiam et ante aliquet, condimentum arcu quis, volutpat urna. Etiam ullamcorper lectus sit amet felis rutrum maximus. Aliquam vehicula risus quis massa cursus convallis. Nullam eget nulla non ante posuere blandit id quis arcu. Integer bibendum, tortor sit amet scelerisque accumsan, quam sapien maximus urna, sed iaculis odio libero vel nisi. Praesent volutpat faucibus orci in dapibus.{.text-cyan-400}
+### Продвинутый пример{#advanced}
+
+::elTabs
+
+:::elTabPane{label="Результат"}
+
+**Известные скальды:**
+
+* Браги Боддасон (IX век) — один из первых известных скальдов, автор “Рагнардрапы” (поэмы о легендарном герое Рагнаре Лодброке).
+
+* Эгиль Скаллагримссон (X век) — знаменитый воин и поэт, герой саги “Сага об Эгиле”.
+
+* Снорри Стурлусон (XIII век) — автор “Младшей Эдды”, где подробно описаны правила скальдической поэзии.
+
+:::
+
+:::elTabPane{.not-prose label="Исходный код"}
+
+```markdown
+**Известные скальды:**
+
+* Браги Боддасон (IX век) — один из первых известных скальдов, автор “Рагнардрапы” (поэмы о легендарном герое Рагнаре Лодброке).
+
+* Эгиль Скаллагримссон (X век) — знаменитый воин и поэт, герой саги “Сага об Эгиле”.
+
+* Снорри Стурлусон (XIII век) — автор “Младшей Эдды”, где подробно описаны правила скальдической поэзии.
+```
+
+:::
+
+::

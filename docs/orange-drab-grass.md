@@ -2,7 +2,6 @@
 title: Main
 description: Description
 icon: twemoji:page-facing-up
-hidden: false
 attrs:
   un-cloak: true
 ---
@@ -67,7 +66,7 @@ attrs:
 
   #footer
 
-  :elButton[ПРОСТОЙ ПРИМЕР]{type="success" size="large" tag="RouterLink" to="#simple"}
+  :elButton[ПРОСТОЙ ПРИМЕР]{type="success" size="large" tag="RouterLink" to="/easy/"}
 
   :::
 
@@ -91,7 +90,7 @@ attrs:
 
   #footer
 
-  :elButton[ПРОДВИНУТЫЙ ПРИМЕР]{type="danger" size="large" tag="RouterLink" to="#advanced"}
+  :elButton[ПРОДВИНУТЫЙ ПРИМЕР]{type="danger" size="large" tag="RouterLink" to="/medium/"}
 
   :::
 
@@ -115,190 +114,11 @@ attrs:
 
   #footer
 
-  :elButton[ПРОФЕССИОНАЛЬНЫЙ ПРИМЕР]{type="primary" size="large" tag="RouterLink" to="#professional"}
+  :elButton[ПРОФЕССИОНАЛЬНЫЙ ПРИМЕР]{type="primary" size="large" tag="RouterLink" to="/hard/"}
 
   :::
 
 ::
-
-### Простой пример{#simple}
-
-::elTabs{tab-position="left"}
-
-:::elTabPane{label="Результат"}
-
-::::elCard
-
-**Известные скальды:**
-
-* Браги Боддасон (IX век) — один из первых известных скальдов, автор “Рагнардрапы” (поэмы о легендарном герое Рагнаре Лодброке).
-
-* Эгиль Скаллагримссон (X век) — знаменитый воин и поэт, герой саги “Сага об Эгиле”.
-
-* Снорри Стурлусон (XIII век) — автор “Младшей Эдды”, где подробно описаны правила скальдической поэзии.
-
-::::
-
-:::
-
-:::elTabPane{.not-prose label="Исходный код"}
-
-```markdown
-**Известные скальды:**
-
-* Браги Боддасон (IX век) — один из первых известных скальдов, автор “Рагнардрапы” (поэмы о легендарном герое Рагнаре Лодброке).
-
-* Эгиль Скаллагримссон (X век) — знаменитый воин и поэт, герой саги “Сага об Эгиле”.
-
-* Снорри Стурлусон (XIII век) — автор “Младшей Эдды”, где подробно описаны правила скальдической поэзии.
-```
-
-:::
-
-::
-
-### Продвинутый пример{#advanced}
-
-::elTabs{tab-position="left"}
-
-:::elTabPane{label="Результат"}
-
-::::elCard
-
-**Известные скальды:**
-
-* Браги Боддасон (IX век) — один из первых известных скальдов, автор “Рагнардрапы” (поэмы о легендарном герое Рагнаре Лодброке).
-
-* Эгиль Скаллагримссон (X век) — знаменитый воин и поэт, герой саги “Сага об Эгиле”.
-
-* Снорри Стурлусон (XIII век) — автор “Младшей Эдды”, где подробно описаны правила скальдической поэзии.
-
-::::
-
-:::
-
-:::elTabPane{.not-prose label="Исходный код"}
-
-```markdown
-**Известные скальды:**
-
-* Браги Боддасон (IX век) — один из первых известных скальдов, автор “Рагнардрапы” (поэмы о легендарном герое Рагнаре Лодброке).
-
-* Эгиль Скаллагримссон (X век) — знаменитый воин и поэт, герой саги “Сага об Эгиле”.
-
-* Снорри Стурлусон (XIII век) — автор “Младшей Эдды”, где подробно описаны правила скальдической поэзии.
-```
-
-:::
-
-::
-
-### Профессиональный пример{#professional}
-
-<elTabs tab-position="left">
-
-<elTabPane label="Результат">
-<elCard class="not-prose">
-
-::form{@submit.prevent="addTodo"}
-:::elInput{v-model="newTodo" required placeholder="new todo"}
-#append
-:elButton[Добавить задачу]{native-type="submit"}
-:::
-::
-::ul{.my-2}
-:::li{v-for="todo in filteredTodos" :key="todo.id"}
-::::elInput{readonly :class="{ done: todo.done }" v-model="todo.text"}
-#prepend
-:elCheckbox{v-model="todo.done"}
-#append
-:elButton[X]{@click="removeTodo(todo)"}
-::::
-:::
-::
-:elButton[{{ hideCompleted ? "Показать все" : "Скрыть выполненные" }}]{@click="hideCompleted = !hideCompleted"}
-
-</elCard>
-
-</elTabPane>
-
-<elTabPane class="not-prose text-sm" label="Исходный код">
-
-```Markdown
----
-script:
-  - type: importmap
-    innerHTML: |
-      {
-        "imports": {
-          "element-plus": "https://cdn.jsdelivr.net/npm/element-plus@2/dist/index.full.min.mjs"
-        }
-      }
----
-
-::form{@submit.prevent="addTodo"}
-:::elInput{v-model="newTodo" required placeholder="new todo"}
-#append
-:elButton[Добавить задачу]{native-type="submit"}
-:::
-::
-::ul{.my-2}
-:::li{v-for="todo in filteredTodos" :key="todo.id"}
-::::elInput{readonly :class="{ done: todo.done }" v-model="todo.text"}
-#prepend
-:elCheckbox{v-model="todo.done"}
-#append
-:elButton[X]{@click="removeTodo(todo)"}
-::::
-:::
-::
-:elButton[{{ hideCompleted ? "Показать все" : "Скрыть выполненные" }}]{@click="hideCompleted = !hideCompleted"}
-
-<script setup>
-import { getCurrentInstance, ref, computed } from 'vue'
-import ElementPlus from 'element-plus'
-
-const { appContext: { app } } = getCurrentInstance()
-app.use(ElementPlus)
-
-let id = 0
-
-const newTodo = ref('')
-const hideCompleted = ref(false)
-const todos = ref([
-  { id: id++, text: 'Изучить HTML', done: true },
-  { id: id++, text: 'Изучить JavaScript', done: true },
-  { id: id++, text: 'Изучить Vue', done: false }
-])
-
-const filteredTodos = computed(() => {
-  return hideCompleted.value
-    ? todos.value.filter((t) => !t.done)
-    : todos.value
-})
-
-function addTodo() {
-  todos.value.push({ id: id++, text: newTodo.value, done: false })
-  newTodo.value = ''
-}
-
-function removeTodo(todo) {
-  todos.value = todos.value.filter((t) => t !== todo)
-}
-</script>
-
-<style>
-@import url("https://cdn.jsdelivr.net/npm/element-plus@2/dist/index.css");
-
-.done {
-  text-decoration: line-through;
-}
-</style>
-```
-
-</elTabPane>
-
-</elTabs>
 
 ***
 
@@ -306,56 +126,23 @@ function removeTodo(todo) {
 
 Начните творить, создавать и развивать свои проекты **уже сегодня**! Skald – это ваш **надежный спутник** в мире текстов и веб-разработки 🌍💖.
 
-<script setup lang="ts">
-import { ref, computed } from "vue";
-
-let id = 0
-
-const newTodo = ref('')
-const hideCompleted = ref(false)
-const todos = ref([
-  { id: id++, text: 'Изучить HTML', done: true },
-  { id: id++, text: 'Изучить JavaScript', done: true },
-  { id: id++, text: 'Изучить Vue', done: false }
-])
-
-const filteredTodos = computed(() => {
-  return hideCompleted.value
-    ? todos.value.filter((t) => !t.done)
-    : todos.value
-})
-
-function addTodo() {
-  todos.value.push({ id: id++, text: newTodo.value, done: false })
-  newTodo.value = ''
-}
-
-function removeTodo(todo) {
-  todos.value = todos.value.filter((t) => t !== todo)
-}
-</script>
-
-<style lang="postcss">
-.done {
-  text-decoration: line-through;
-}
-</style>
-
 <style scoped lang="postcss">
-#levels>li {
-  @apply relative;
-}
+#levels {
+  &>li {
+    @apply relative;
+  }
 
-#levels .el-card__body li {
-  @apply my-6;
-}
+  & .el-card__body li {
+    @apply my-6;
+  }
 
-#levels img {
-  @apply "absolute top-0 left-1/2 block w-32 -translate-x-1/2 -translate-y-1/2 hover:-translate-y-2/3 transition-transform duration-700";
-}
+  & img {
+    @apply "absolute top-0 left-1/2 block w-32 -translate-x-1/2 -translate-y-1/2 hover:-translate-y-2/3 transition-transform duration-700";
+  }
 
-#levels figcaption {
-  @apply "text-center font-bold text-xl mb-4 uppercase after:content-['●'] after:block after:my-4";
+  & figcaption {
+    @apply "text-center font-bold text-xl mb-4 uppercase after:content-['●'] after:block after:my-4";
+  }
 }
 
 #download a {
@@ -366,4 +153,3 @@ function removeTodo(todo) {
   @apply "dark:invert";
 }
 </style>
-

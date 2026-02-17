@@ -44,7 +44,7 @@ script:
 
 ::
 
-<RouterView />
+:RouterView
 
 <script setup lang="ts">
 import { getCurrentInstance } from "vue";
@@ -94,17 +94,17 @@ html.dark #light {
 <style scoped lang="postcss">
 #menu {
   @apply border-[var(--nord8)];
-}
 
-#menu li:nth-last-child(2) {
-  @apply ml-auto -mr-4;
-}
+  & li:nth-last-child(2) {
+    @apply ml-auto -mr-4;
+  }
 
-#menu a.router-link-exact-active {
-  @apply bg-[var(--nord8)] text-[var(--nord6)];
+  & a.router-link-exact-active {
+    @apply bg-[var(--nord8)] text-[var(--nord6)];
+  }
 }
 
 #menu a {
-  @apply 'text-[var(--nord0)] transition hover:text-[var(--nord10)] px-3 py-2 rounded-md dark:text-[var(--nord6)]';
+  @apply "text-[var(--nord0)] transition px-3 py-2 rounded-md hover:text-[var(--nord10)] dark:text-[var(--nord6)]";
 }
 </style>

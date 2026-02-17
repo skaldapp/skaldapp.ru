@@ -1,9 +1,9 @@
 ---
 title: Title
-meta:
-  - name: description
-    content: Description
+description: Description
 icon: twemoji:page-facing-up
+attrs:
+  un-cloak: true
 ---
 
 A simple :inline-component
