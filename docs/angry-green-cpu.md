@@ -8,7 +8,13 @@ attrs:
 
 # Skald это профессионально
 
-- script
-- vue
-- importmap
-- mdc
+* script
+
+* vue
+
+* importmap
+
+* mdc
+
+<br />
+
