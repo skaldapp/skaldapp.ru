@@ -36,8 +36,6 @@ script:
 
 * [Профессионально](/hard/)
 
-* [ИИ](/ai/)
-
 * [:span[]{.i-carbon-logo-github.align-middle.size-6}](https://github.com/skaldapp)
 
 * <i-carbon-sun dark:i-carbon-moon align-middle size-6 dark:size-6 cursor-pointer @click="toggleDark()" />
@@ -45,6 +43,16 @@ script:
 ::
 
 :RouterView
+
+<br />
+
+***
+
+### 🚀 Готовы попробовать Skald?
+
+Начните творить, создавать и развивать свои проекты **уже сегодня**! Skald – это ваш **надежный спутник** в мире текстов и веб-разработки 🌍💖.
+
+:elBacktop
 
 <script setup lang="ts">
 import { getCurrentInstance } from "vue";
