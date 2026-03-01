@@ -1,5 +1,5 @@
 ---
-title: Title
+title: Профессионально
 description: Description
 icon: twemoji:page-facing-up
 attrs:

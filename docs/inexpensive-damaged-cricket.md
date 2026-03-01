@@ -12,6 +12,7 @@ attrs:
     - prose-sm
     - sm:prose-base
     - dark:prose-invert
+    - min-h-dvh
 template: true
 icon: twemoji:page-facing-up
 script:
@@ -26,25 +27,16 @@ script:
       }
 ---
 
-::ul{#menu.not-prose.flex-inline.flex-wrap.gap-3.w-full.text-sm.border-b-2.py-4.mt-2.mb-24.font-medium}
+<ul id="menu" class="not-prose" flex-inline flex-wrap gap-3 w-full text-sm border-b-2 py-4 mt-2 mb-24 font-medium>
+<li><RouterLink to="/" id="logo">SK<i i-fa7-solid-mountain align-text-bottom size-5 />LD</RouterLink></li>
+<li v-for="{ frontmatter: { title }, to, id } in the.$children.slice(1)" :key="id"><RouterLink :to>{{ title }}</RouterLink></li>
+<li><a href="https://github.com/skaldapp" target="_blank" rel="noopener noreferrer"><i i-carbon-logo-github align-middle size-6 /></a></li>
+<li><i i-carbon-sun dark:i-carbon-moon align-middle size-6 dark:size-6 cursor-pointer @click="toggleDark()" /></li>
+</ul>
 
-* [SK<i-fa7-solid-mountain align-text-bottom size-5/>LD](/)
-
-* [Просто](/easy/)
-
-* [Эффективно](/medium/)
-
-* [Профессионально](/hard/)
-
-* [:span[]{.i-carbon-logo-github.align-middle.size-6}](https://github.com/skaldapp)
-
-* <i-carbon-sun dark:i-carbon-moon align-middle size-6 dark:size-6 cursor-pointer @click="toggleDark()" />
-
-::
-
+::div{.min-h-dvh}
 :RouterView
-
-<br />
+::
 
 ***
 
@@ -55,13 +47,17 @@ script:
 :elBacktop
 
 <script setup lang="ts">
-import { getCurrentInstance } from "vue";
+import { getCurrentInstance, inject } from "vue";
 import ElementPlus from "element-plus";
 import { useDark, useToggle } from "@vueuse/core";
 
 const toggleDark = useToggle(useDark());
 const { appContext: { app } } = getCurrentInstance();
+const docs = inject("docs");
+const the = docs[$id];
+
 app.use(ElementPlus);
+
 </script>
 
 <style>
@@ -97,6 +93,7 @@ html:not(.dark) #dark,
 html.dark #light {
   display: none !important;
 }
+
 </style>
 
 <style scoped lang="postcss">
@@ -107,12 +104,12 @@ html.dark #light {
     @apply ml-auto -mr-4;
   }
 
-  & a.router-link-exact-active {
+  & a.router-link-active:not(#logo) {
     @apply bg-[var(--nord8)] text-[var(--nord6)];
   }
 }
 
 #menu a {
-  @apply "text-[var(--nord0)] transition px-3 py-2 rounded-md hover:text-[var(--nord10)] dark:text-[var(--nord6)]";
+  @apply "text-[var(--nord0)] transition px-3 py-2 rounded-md hover-text-[var(--nord10)] dark-text-[var(--nord6)]";
 }
 </style>

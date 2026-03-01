@@ -1,5 +1,5 @@
 ---
-title: Title
+title: Эффективно
 description: Description
 icon: twemoji:page-facing-up
 attrs:
@@ -8,7 +8,11 @@ attrs:
 
 # Skald это эффективно
 
-- frontmatter
-- html
-- tailwindcss
-- style
+* frontmatter
+
+* html
+
+* tailwindcss
+
+* style
+
