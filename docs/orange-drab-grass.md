@@ -66,7 +66,7 @@ attrs:
 
   #footer
 
-  :elButton[ПРОСТОЙ ПРИМЕР]{type="success" size="large" tag="RouterLink" to="/easy/"}
+  :elButton[ПОДРОБНЕЕ]{type="success" size="large" tag="RouterLink" to="/easy/"}
 
   :::
 
@@ -90,7 +90,7 @@ attrs:
 
   #footer
 
-  :elButton[ПРОДВИНУТЫЙ ПРИМЕР]{type="danger" size="large" tag="RouterLink" to="/medium/"}
+  :elButton[ПОДРОБНЕЕ]{type="danger" size="large" tag="RouterLink" to="/medium/"}
 
   :::
 
@@ -114,7 +114,7 @@ attrs:
 
   #footer
 
-  :elButton[ПРОФЕССИОНАЛЬНЫЙ ПРИМЕР]{type="primary" size="large" tag="RouterLink" to="/hard/"}
+  :elButton[ПОДРОБНЕЕ]{type="primary" size="large" tag="RouterLink" to="/hard/"}
 
   :::
 
@@ -122,18 +122,26 @@ attrs:
 
 ## Вопрос - ответ
 
-
-
 * Чем Skald отличается от других редакторов Markdown?
+
 * Что можно сделать с помощью Skald?
+
 * Кроме файловой системы, с какими системами хранения работает Skald?
+
 * Может ли хранилище S3 выступать в качестве статического хостинга?
+
 * Можно ли использовать Skald офлайн?
+
 * Безопасно ли добавлять секретные ключи в Skald для интеграции с ИИ?
+
 * Какие операционные системы поддерживает Skald?
+
 * Какие модели ИИ поддерживает Skald?
+
 * Нужен ли nodejs для работы Skald?
+
 * Какие недостатки у Skald?
+
 * Какой у вас планы на будущее?
 
 <style scoped lang="postcss">
