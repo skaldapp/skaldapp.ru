@@ -1,6 +1,5 @@
 ---
 title: Профессионально
-description: Description
 icon: twemoji:page-facing-up
 attrs:
   un-cloak: true
@@ -16,5 +15,5 @@ attrs:
 
 * mdc
 
-<br />
+* структура файлов проекта
 

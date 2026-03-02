@@ -1,12 +1,10 @@
 ---
 title: Skald
-description: Skald is a tool for creating and managing markdown content.
+description: Skald - это современный инструмент для работы с текстом и веб-разработки.
 attrs:
   un-cloak: true
   class:
-    - container
-    - mx-auto
-    - px-4
+    - max-w-none
     - prose
     - prose-slate
     - prose-sm
@@ -27,22 +25,30 @@ script:
       }
 ---
 
-<ul id="menu" class="not-prose" flex-inline flex-wrap gap-3 w-full text-sm border-b-2 py-4 mt-2 mb-24 font-medium>
+<ul id="menu" class="not-prose" container mx-auto px-4 flex flex-wrap gap-3 w-full text-sm border-b-2 py-4 mt-2 mb-24 font-medium>
 <li><RouterLink to="/" id="logo">SK<i i-fa7-solid-mountain align-text-bottom size-5 />LD</RouterLink></li>
 <li v-for="{ frontmatter: { title }, to, id } in the.$children.slice(1)" :key="id"><RouterLink :to>{{ title }}</RouterLink></li>
 <li><a href="https://github.com/skaldapp" target="_blank" rel="noopener noreferrer"><i i-carbon-logo-github align-middle size-6 /></a></li>
-<li><i i-carbon-sun dark:i-carbon-moon align-middle size-6 dark:size-6 cursor-pointer @click="toggleDark()" /></li>
+<li><i i-carbon-sun dark-i-carbon-moon align-middle size-6 dark-size-6 cursor-pointer @click="toggleDark()" /></li>
 </ul>
 
-::div{.min-h-dvh}
+::div{.min-h-dvh.container.mx-auto.px-4}
+
 :RouterView
+
 ::
 
-***
+::div{.bg-[var(--nord6)].dark-bg-[var(--nord0)].mt-32}
 
-### 🚀 Готовы попробовать Skald?
+:::div{.container.mx-auto.px-4.py-8}
 
-Начните творить, создавать и развивать свои проекты **уже сегодня**! Skald – это ваш **надежный спутник** в мире текстов и веб-разработки 🌍💖.
+:h3[🚀 Готовы попробовать Skald?]
+
+Начните творить, создавать и развивать свои проекты **уже сегодня**! Skald – это ваш **надежный спутник** в мире текстов и веб-разработки.
+
+:::
+
+::
 
 :elBacktop
 
@@ -86,7 +92,7 @@ app.use(ElementPlus);
 
 <style lang="postcss">
 body {
-  @apply dark:bg-[var(--nord0)];
+  @apply dark-bg-[var(--nord1)];
 }
 
 html:not(.dark) #dark,

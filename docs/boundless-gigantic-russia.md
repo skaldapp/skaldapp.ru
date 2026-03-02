@@ -15,9 +15,9 @@ icon: twemoji:page-facing-up
 
 ```JavaScript
 
-const fibonacci=n=>~-n<=0?n:fibonacci(--n)+fibonacci(--n);
+const fibonacci = (length) => Array.from({ length }, function (_, $) { return this[$] = this[$ - 1] + this[$ - 2] || $ }, []);
 
-console.log(fibonacci(10)); // 55
+console.log(fibonacci(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 ```
 
@@ -27,9 +27,9 @@ console.log(fibonacci(10)); // 55
 
 ```JavaScript
 
-const fibonacci=n=>~-n<=0?n:fibonacci(--n)+fibonacci(--n);
+const fibonacci = (length) => Array.from({ length }, function (_, $) { return this[$] = this[$ - 1] + this[$ - 2] || $ }, []);
 
-console.log(fibonacci(10)); // 55
+console.log(fibonacci(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 ```
 
@@ -79,13 +79,12 @@ $$
 
 ```Markdown
 
-![Markdown](uploads/markdown.png) 🤗 ![](uploads/markdown.png "Markdown Logo") 🤗 ![Markdown](uploads/markdown.png "Markdown Logo")
+![Markdown](uploads/markdown.png) - ![](uploads/markdown.png "Markdown Logo") - ![Markdown](uploads/markdown.png "Markdown Logo")
 
 ![1.00](uploads/elder.jpg "Старец")
 
 ```
 
-![Markdown](uploads/markdown.png)[🤗]{.text-5xl.mx-4}![](uploads/markdown.png "Markdown Logo")[🤗]{.text-5xl.mx-4}![Markdown](uploads/markdown.png "Markdown Logo")
+![Markdown](uploads/markdown.png) - ![](uploads/markdown.png "Markdown Logo") - ![Markdown](uploads/markdown.png "Markdown Logo")
 
 ![1.00](uploads/elder.jpg "Старец")
-
