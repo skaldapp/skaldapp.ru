@@ -58,11 +58,10 @@ import ElementPlus from "element-plus";
 import { useDark, useToggle } from "@vueuse/core";
 
 const toggleDark = useToggle(useDark());
-const { appContext: { app } } = getCurrentInstance();
 const docs = inject("docs");
 const the = docs[$id];
 
-app.use(ElementPlus);
+window.__vue_app__.use(ElementPlus);
 
 </script>
 

@@ -3,15 +3,18 @@ title: Эффективно
 icon: twemoji:page-facing-up
 attrs:
   un-cloak: true
+template: true
 ---
 
 # Skald это эффективно
 
-* frontmatter
+<elMenu mode="horizontal" :router="true" :default-active="$route.path"><elMenuItem v-for="{ name, to, frontmatter: { title } } in doc.$children" :index="to" class="!px-5">{{ title ?? name }}</elMenuItem></elMenu>
 
-* html
+:RouterView
 
-* tailwindcss
+<script setup>
+import { inject } from "vue";
 
-* style
-
+const docs = inject("docs");
+const doc = docs[$id];
+</script>
