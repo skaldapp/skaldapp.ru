@@ -39,7 +39,7 @@ icon: twemoji:page-facing-up
 
 ```HTML
 
-<div class="alert alert-info">
+<div>
   <h4>Информация</h4>
   <p>Это информационное окно, созданное с помощью HTML.</p>
 </div>
@@ -53,7 +53,7 @@ icon: twemoji:page-facing-up
 
 ::elCard
 
-<div class="alert alert-info">
+<div>
   <h4>Информация</h4>
   <p>Это информационное окно, созданное с помощью HTML.</p>
 </div>
@@ -64,3 +64,29 @@ icon: twemoji:page-facing-up
 </blockquote>
 
 ::
+
+### Смешанные HTML-элементы
+
+```Markdown
+
+<div style="text-align: center;">
+
+#### Центрированный заголовок
+  
+Это абзац внутри <strong>центрированного</strong> контейнера.
+
+</div>
+
+```
+
+<elCard>
+
+<div style="text-align: center;">
+
+#### Центрированный заголовок
+
+Это абзац внутри <strong>центрированного</strong> контейнера.
+
+</div>
+
+</elCard>
