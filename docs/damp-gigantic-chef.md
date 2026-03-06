@@ -7,11 +7,7 @@ attrs:
 icon: twemoji:page-facing-up
 ---
 
-## Встраивание [HTML](https://ru.wikipedia.org/wiki/HTML){target="_blank"}
-
-Одна из мощных возможностей Markdown — способность напрямую встраивать HTML-код, что обеспечивает более богатую выразительность и функциональные расширения для ваших документов.
-
-### Строчные HTML-элементы
+## Строчные HTML-элементы
 
 Вы можете использовать HTML-теги напрямую в Markdown:
 
@@ -35,7 +31,7 @@ icon: twemoji:page-facing-up
 
 ::
 
-### Блочные HTML-элементы
+## Блочные HTML-элементы
 
 ```HTML
 
@@ -65,7 +61,7 @@ icon: twemoji:page-facing-up
 
 ::
 
-### Смешанные HTML-элементы
+## Смешанные HTML-элементы
 
 ```Markdown
 

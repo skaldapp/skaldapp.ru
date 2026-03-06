@@ -9,15 +9,15 @@ attrs:
 
 ::ul{#download.not-prose.flex-inline.flex-wrap.gap-8.justify-center.w-full.my-24.font-medium}
 
-* [:span[]{.i-material-icon-theme-folder-public-open.size-11.align-middle} webapp](https://skaldapp.github.io/skaldapp)
+* [:Icon{.size-11.align-middle.inline-block icon="material-icon-theme:folder-public-open"} webapp](https://skaldapp.github.io/skaldapp)
 
-* [:span[]{.i-material-icon-theme-folder-windows-open.size-11.align-middle} windows](https://github.com/skaldapp/skaldapp/releases/latest)
+* [:Icon{.size-11.align-middle.inline-block icon="material-icon-theme:folder-windows-open"} windows](https://github.com/skaldapp/skaldapp/releases/latest)
 
-* [:span[]{.i-material-icon-theme-folder-macos-open.size-11.align-middle} macos](https://github.com/skaldapp/skaldapp/releases/latest)
+* [:Icon{.size-11.align-middle.inline-block icon="material-icon-theme:folder-macos-open"} macos](https://github.com/skaldapp/skaldapp/releases/latest)
 
-* [:span[]{.i-material-icon-theme-folder-linux-open.size-11.align-middle} appimage](https://github.com/skaldapp/skaldapp/releases/latest)
+* [:Icon{.size-11.align-middle.inline-block icon="material-icon-theme:folder-linux-open"} appimage](https://github.com/skaldapp/skaldapp/releases/latest)
 
-* [:span[]{.i-material-icon-theme-folder-snapcraft-open.size-11.align-middle} snap](https://snapcraft.io/skaldapp)
+* [:Icon{.size-11.align-middle.inline-block icon="material-icon-theme:folder-snapcraft-open"} snap](https://snapcraft.io/skaldapp)
 
 ::
 
@@ -27,11 +27,25 @@ attrs:
 
 Skald – инновационный текстовый редактор с поддержкой **Markdown**, созданный для тех, кто ценит **простоту, гибкость и безопасность**. Он идеально подходит как для писателей, так и для разработчиков, предлагая **кристально чистый и интуитивно понятный интерфейс**, который помогает сосредоточиться на главном – **творчестве и продуктивности**.
 
-### Уникальное преимущество Skald
+### Материалы готовы к публикации в интернете{.mt-24}
+
+::ul{.not-prose.flex.justify-between.ma-24}
+
+* :Icon{.size-48 icon="emojione-monotone:desktop-computer"}
+
+* :Icon{.size-48 icon="svg-spinners:3-dots-move"}
+
+* :Icon{.size-48 icon="gis:earth-net"}
+
+::
 
 Работая в Skald, вы создаёте структурированные документы в привычном древовидном формате. При этом каждая папка с вашими материалами автоматически готова к публикации как полноценный веб-сайт. Достаточно скопировать её на любой статический хостинг - и ваш контент мгновенно доступен в виде сайта без каких-либо дополнительных преобразований или настроек.
 
-### Ваш личный помощник с искусственным интеллектом
+### Ваш личный помощник с искусственным интеллектом{.mt-24}
+
+::flex{.flex-wrap.items-center}
+
+:Icon{.size-96 icon="arcticons:robotfindskitten-alt"}
 
 * 💡 **Генерация контента** - креативные идеи в интерактивном чате
 
@@ -39,9 +53,11 @@ Skald – инновационный текстовый редактор с по
 
 * 🛠️ **Автодополнение кода** – поддержка **Vue.js**
 
-![1.00](uploads/light.png){#light.my-16}
+::
 
-![1.00](uploads/dark.png){#dark.my-16}
+![1.00](uploads/light.png){#light.mb-16}
+
+![1.00](uploads/dark.png){#dark.mb-16}
 
 ## Уровни функциональности{.text-center}
 

@@ -18,18 +18,19 @@ script:
     innerHTML: |
       {
         "imports": {
-          "@vueuse/core": "https://cdn.jsdelivr.net/npm/@vueuse/core/dist/index.js",
-          "@vueuse/shared": "https://cdn.jsdelivr.net/npm/@vueuse/shared/dist/index.js",
-          "element-plus": "https://cdn.jsdelivr.net/npm/element-plus@2/dist/index.full.min.mjs"
+          "@vueuse/core": "https://cdn.jsdelivr.net/npm/@vueuse/core@14/dist/index.js",
+          "@vueuse/shared": "https://cdn.jsdelivr.net/npm/@vueuse/shared@14/dist/index.js",
+          "element-plus": "https://cdn.jsdelivr.net/npm/element-plus@2/dist/index.full.min.mjs",
+          "@iconify/vue": "https://cdn.jsdelivr.net/npm/@iconify/vue@5/dist/iconify.mjs"
         }
       }
 ---
 
 <ul id="menu" class="not-prose" container mx-auto px-4 flex flex-wrap gap-3 w-full text-sm border-b-2 py-4 mt-2 mb-24 font-medium>
-<li><RouterLink to="/" id="logo">SK<i i-fa7-solid-mountain align-text-bottom size-5 />LD</RouterLink></li>
+<li><RouterLink to="/" id="logo">SK<Icon icon="fa7-solid:mountain" align-text-bottom size-5 inline-block />LD</RouterLink></li>
 <li v-for="{ frontmatter: { title }, to, id } in the.$children.slice(1)" :key="id"><RouterLink :to>{{ title }}</RouterLink></li>
-<li><a href="https://github.com/skaldapp" target="_blank" rel="noopener noreferrer"><i i-carbon-logo-github align-middle size-6 /></a></li>
-<li><i i-carbon-sun dark-i-carbon-moon align-middle size-6 dark-size-6 cursor-pointer @click="toggleDark()" /></li>
+<li><a href="https://github.com/skaldapp" target="_blank" rel="noopener noreferrer"><Icon icon="carbon:logo-github" align-middle size-6 inline-block /></a></li>
+<li><Icon icon="carbon:sun" align-middle size-6 dark-size-6 cursor-pointer inline-block dark-hidden @click="toggleDark()" /><Icon icon="carbon:moon" align-middle size-6 dark-size-6 cursor-pointer hidden !dark-inline-block @click="toggleDark()" /></li>
 </ul>
 
 ::div{.min-h-dvh.container.mx-auto.px-4}
@@ -53,15 +54,18 @@ script:
 :elBacktop
 
 <script setup lang="ts">
-import { getCurrentInstance, inject } from "vue";
+import { inject } from "vue";
 import ElementPlus from "element-plus";
 import { useDark, useToggle } from "@vueuse/core";
+import { Icon } from "@iconify/vue";
 
 const toggleDark = useToggle(useDark());
 const docs = inject("docs");
 const the = docs[$id];
+const app = window.__vue_app__;
 
-window.__vue_app__.use(ElementPlus);
+app.use(ElementPlus);
+app.component("Icon", Icon);
 
 </script>
 
