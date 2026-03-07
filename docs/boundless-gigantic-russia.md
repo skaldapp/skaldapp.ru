@@ -35,6 +35,8 @@ console.log(fibonacci(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 ## Таблицы
 
+**Разметка**
+
 ```Markdown
 
 | Выравнивание слева | Выравнивание по центру | Выравнивание справа |
@@ -45,7 +47,7 @@ console.log(fibonacci(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 | Выравнивание слева | Выравнивание по центру | Выравнивание справа |
 | :----------------- | :--------------------: | ------------------: |
@@ -59,6 +61,8 @@ console.log(fibonacci(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 Используйте двойные знаки доллара $$ для заключения формул, которые будут отображаться на отдельной центрированной строке. Для примера уравнение Шрёдингера:
 
+**Разметка**
+
 ```
 
 $$
@@ -67,7 +71,7 @@ $$
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 $$
 i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r},t) = \hat{H}\Psi(\mathbf{r},t)
@@ -77,6 +81,8 @@ $$
 
 ## Изображения
 
+**Разметка**
+
 ```Markdown
 
 ![Markdown](uploads/markdown.png) - ![](uploads/markdown.png "Markdown Logo") - ![Markdown](uploads/markdown.png "Markdown Logo")
@@ -85,6 +91,10 @@ $$
 
 ```
 
+::elCard{header="Результат" header-class="font-bold"}
+
 ![Markdown](uploads/markdown.png) - ![](uploads/markdown.png "Markdown Logo") - ![Markdown](uploads/markdown.png "Markdown Logo")
 
 ![1.00](uploads/elder.jpg "Старец")
+
+::

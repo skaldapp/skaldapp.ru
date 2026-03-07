@@ -26,11 +26,11 @@ script:
       }
 ---
 
-<ul id="menu" class="not-prose" container mx-auto px-4 flex flex-wrap gap-3 w-full text-sm border-b-2 py-4 mt-2 mb-24 font-medium>
-<li><RouterLink to="/" id="logo">SK<Icon icon="fa7-solid:mountain" align-text-bottom size-5 inline-block />LD</RouterLink></li>
+<ul id="menu" class="not-prose container mx-auto px-4 flex flex-wrap gap-3 w-full text-sm border-b-2 py-4 mt-2 mb-24 font-medium">
+<li><RouterLink to="/" id="logo">SK<Icon icon="fa7-solid:mountain" class="align-text-bottom size-5 inline-block" />LD</RouterLink></li>
 <li v-for="{ frontmatter: { title }, to, id } in the.$children.slice(1)" :key="id"><RouterLink :to>{{ title }}</RouterLink></li>
-<li><a href="https://github.com/skaldapp" target="_blank" rel="noopener noreferrer"><Icon icon="carbon:logo-github" align-middle size-6 inline-block /></a></li>
-<li><Icon icon="carbon:sun" align-middle size-6 dark-size-6 cursor-pointer inline-block dark-hidden @click="toggleDark()" /><Icon icon="carbon:moon" align-middle size-6 dark-size-6 cursor-pointer hidden !dark-inline-block @click="toggleDark()" /></li>
+<li><a href="https://github.com/skaldapp" target="_blank" rel="noopener noreferrer"><Icon icon="carbon:logo-github" class="align-middle size-6 inline-block" /></a></li>
+<li><Icon icon="carbon:sun" class="align-middle size-6 dark-size-6 cursor-pointer inline-block dark-hidden" @click="toggleDark()" /><Icon icon="carbon:moon" class="align-middle size-6 dark-size-6 cursor-pointer hidden !dark-inline-block" @click="toggleDark()" /></li>
 </ul>
 
 ::div{.min-h-dvh.container.mx-auto.px-4}

@@ -29,7 +29,7 @@ Skald – инновационный текстовый редактор с по
 
 ### Материалы готовы к публикации в интернете{.mt-24}
 
-::ul{.not-prose.flex.justify-between.ma-24}
+::ul{class="not-prose grid grid-cols-4 my-24 justify-items-center md:grid-cols-12 [&>li]:col-span-4"}
 
 * :Icon{.size-48 icon="emojione-monotone:desktop-computer"}
 

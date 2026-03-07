@@ -1,5 +1,5 @@
 ---
-title: MDC
+title: Comark
 attrs:
   un-cloak: true
   class:
@@ -7,4 +7,4 @@ attrs:
 icon: twemoji:page-facing-up
 ---
 
-## mdc
+## Comark

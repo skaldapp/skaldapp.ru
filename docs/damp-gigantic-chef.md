@@ -11,6 +11,8 @@ icon: twemoji:page-facing-up
 
 Вы можете использовать HTML-теги напрямую в Markdown:
 
+**Разметка**
+
 ```Markdown
 
 Это абзац с <strong>жирным текстом</strong> и <em>курсивом</em>.
@@ -21,7 +23,7 @@ icon: twemoji:page-facing-up
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 Это абзац с <strong>жирным текстом</strong> и <em>курсивом</em>.
 
@@ -32,6 +34,8 @@ icon: twemoji:page-facing-up
 ::
 
 ## Блочные HTML-элементы
+
+**Разметка**
 
 ```HTML
 
@@ -47,7 +51,7 @@ icon: twemoji:page-facing-up
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 <div>
   <h4>Информация</h4>
@@ -63,6 +67,8 @@ icon: twemoji:page-facing-up
 
 ## Смешанные HTML-элементы
 
+**Разметка**
+
 ```Markdown
 
 <div style="text-align: center;">
@@ -75,7 +81,7 @@ icon: twemoji:page-facing-up
 
 ```
 
-<elCard>
+<elCard header="Результат" header-class="font-bold">
 
 <div style="text-align: center;">
 

@@ -9,6 +9,8 @@ icon: twemoji:page-facing-up
 
 ## Маркированный список
 
+**Разметка**
+
 ```Markdown
 
 * Элемент уровня 1 - 1
@@ -29,7 +31,7 @@ icon: twemoji:page-facing-up
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 * Элемент уровня 1 - 1
 
@@ -51,6 +53,8 @@ icon: twemoji:page-facing-up
 
 ## Нумерованный список
 
+**Разметка**
+
 ```Markdown
 
 1. Упорядоченный элемент 1
@@ -71,7 +75,7 @@ icon: twemoji:page-facing-up
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 1. Упорядоченный элемент 1
 
@@ -92,6 +96,8 @@ icon: twemoji:page-facing-up
 ::
 
 ## Списки задач
+
+**Разметка**
 
 ```Markdown
 
@@ -117,7 +123,7 @@ icon: twemoji:page-facing-up
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 * [x] Планирование проекта
 

@@ -13,6 +13,8 @@ Markdown предоставляет лаконичный синтаксис дл
 
 :elAlert{.not-prose title="scoped" type="warning" description="Стили применяются только к текущей странице, если использован аттрибут scoped." show-icon :closable="false"}
 
+**Разметка**
+
 ```html
 
 <style scoped>
@@ -30,7 +32,8 @@ Markdown предоставляет лаконичный синтаксис дл
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
+
 
 <style scoped>
 .highlight {
@@ -49,6 +52,8 @@ Markdown предоставляет лаконичный синтаксис дл
 
 Для тех же целей можно использовать классы из Tailwind CSS.
 
+**Разметка**
+
 ```html
 
 <style lang="postcss" scoped>
@@ -63,7 +68,7 @@ Markdown предоставляет лаконичный синтаксис дл
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 <style lang="postcss" scoped>
 .highlight-tw {
@@ -79,6 +84,8 @@ Markdown предоставляет лаконичный синтаксис дл
 
 Стили также можно подключить из внешних файлов, например, из CDN:
 
+**Разметка**
+
 ```html
 
 <style scoped src="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css"></style>
@@ -87,7 +94,7 @@ Markdown предоставляет лаконичный синтаксис дл
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 <style scoped src="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css"></style>
 

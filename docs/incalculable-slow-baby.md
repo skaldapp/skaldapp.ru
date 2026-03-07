@@ -25,6 +25,8 @@ icon: twemoji:page-facing-up
 
 ## Ссылки
 
+**Разметка**
+
 ```Markdown
 
 [Текст ссылки](https://skaldapp.ru)
@@ -33,7 +35,7 @@ icon: twemoji:page-facing-up
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 [Текст ссылки](https://skaldapp.ru)
 
@@ -51,6 +53,8 @@ icon: twemoji:page-facing-up
 
 ## Автоссылки
 
+**Разметка**
+
 ```Markdown
 
 https://skaldapp.ru
@@ -59,7 +63,7 @@ skaldapp@outlook.com
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 <https://skaldapp.ru>
 
@@ -69,10 +73,16 @@ skaldapp@outlook.com
 
 ## Ссылка на изображение
 
+**Разметка**
+
 ```Markdown
 
 [![1.00](uploads/valkyrja.jpg)](https://skaldapp.ru)
 
 ```
 
+::elCard{.not-prose header="Результат" header-class="font-bold"}
+
 [![1.00](uploads/valkyrja.jpg)](https://skaldapp.ru)
+
+::

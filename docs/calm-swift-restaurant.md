@@ -13,6 +13,8 @@ icon: twemoji:page-facing-up
 
 :elAlert{.not-prose title="FOUC" type="warning" description="Для пердотвращения дребезга контента при загрузке, используйте атрибут `un-cloak` в корневом элементе страницы." show-icon :closable="false"}
 
+**Разметка**
+
 ```HTML
 
 <button class="m-2 bg-blue-400 hover:bg-blue-500 text-sm text-white font-mono font-light py-2 px-4 rounded border border-blue-200 dark:bg-blue-500 dark:hover:bg-blue-600">
@@ -21,7 +23,7 @@ icon: twemoji:page-facing-up
 
 ```
 
-::elCard{.not-prose}
+::elCard{.not-prose header="Результат" header-class="font-bold"}
 
 <button class="m-2 bg-blue-400 hover:bg-blue-500 text-sm text-white font-mono font-light py-2 px-4 rounded border border-blue-200 dark:bg-blue-500 dark:hover:bg-blue-600">
   Button
@@ -31,6 +33,8 @@ icon: twemoji:page-facing-up
 
 Или даже так:
 
+**Разметка**
+
 ```HTML
 
 <button m-2 bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600" text="sm white" font="mono light" p="y-2 x-4" border="~ rounded blue-200">
@@ -39,7 +43,7 @@ icon: twemoji:page-facing-up
 
 ```
 
-::elCard{.not-prose}
+::elCard{.not-prose header="Результат" header-class="font-bold"}
 
 <button m-2 bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600" text="sm white" font="mono light" p="y-2 x-4" border="~ rounded blue-200">
   Button
@@ -48,6 +52,8 @@ icon: twemoji:page-facing-up
 ::
 
 Допускается также использовать сокращенную запись для компонентов, к примеру `text-red` вместо `class="text-red"`:
+
+**Разметка**
 
 ```html
 
@@ -65,7 +71,7 @@ I'm feeling <i-line-md-emoji-grin /> today!
 
 ```
 
-::elCard{.not-prose}
+::elCard{.not-prose header="Результат" header-class="font-bold"}
 
 <text-red>red text</text-red>
 <flex>flexbox</flex>
@@ -76,6 +82,8 @@ I'm feeling <i-line-md-emoji-grin /> today!
 ## Иконки
 
 Любая иконка из проекта Iconify доступна по первому требованию. Просто добавьте класс `i-<имя_коллекции>:<имя_иконки>` к любому элементу, и иконка появится. Например, `i-carbon:sun` отобразит иконку солнца из коллекции Carbon.
+
+**Разметка**
 
 ```html
 
@@ -90,7 +98,7 @@ I'm feeling <i-line-md-emoji-grin /> today!
 
 ```
 
-::elCard{.not-prose}
+::elCard{.not-prose header="Результат" header-class="font-bold"}
 
 <div class="flex items-center gap-x-4 text-4xl p-2 mt-4">
     <div class="i-ph:anchor-simple-thin"></div>
@@ -106,6 +114,8 @@ I'm feeling <i-line-md-emoji-grin /> today!
 ## Типографика
 
 :elAlert{.not-prose title="Проза" type="primary" description="Типографика включается путем добавления класса prose к элементу. Выключение можно сделать с помощью класса not-prose." show-icon :closable="false"}
+
+**Разметка**
 
 ```html
 
@@ -124,7 +134,7 @@ I'm feeling <i-line-md-emoji-grin /> today!
 
 ```
 
-::elCard
+::elCard{header="Результат" header-class="font-bold"}
 
 <article class="prose-stone prose-xl dark:prose-invert">
   <h1>Чесночный хлеб с сыром: что говорит нам наука</h1>
