@@ -1,5 +1,6 @@
 ---
-title: Attributes
+title: Атрибуты
+description: Добавьте пользовательские классы, идентификаторы (ID), стили и атрибуты данных к стандартным элементам Markdown с помощью синтаксиса фигурных скобок.
 attrs:
   un-cloak: true
   class:
@@ -157,3 +158,4 @@ Reference this [specific text]{#ref-1} later.
 ```html
 <p><span class="highlight"><strong>Bold</strong> and <em>italic</em> text</span></p>
 ```
+

@@ -1,5 +1,5 @@
 ---
-title: Tree
+title: Семантика
 attrs:
   un-cloak: true
   class:

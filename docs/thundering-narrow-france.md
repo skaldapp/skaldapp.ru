@@ -1,5 +1,5 @@
 ---
-title: Style
+title: Стили CSS
 attrs:
   un-cloak: true
   class:

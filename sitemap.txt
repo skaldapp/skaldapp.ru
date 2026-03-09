@@ -1,0 +1,13 @@
+https://skaldapp.ru
+https://skaldapp.ru/easy/
+https://skaldapp.ru/easy/text/
+https://skaldapp.ru/easy/lists/
+https://skaldapp.ru/easy/advanced/
+https://skaldapp.ru/easy/attributes/
+https://skaldapp.ru/medium/
+https://skaldapp.ru/medium/tailwindcss/
+https://skaldapp.ru/medium/style/
+https://skaldapp.ru/medium/frontmatter/
+https://skaldapp.ru/hard/
+https://skaldapp.ru/hard/tree/
+https://skaldapp.ru/hard/comark/
