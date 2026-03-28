@@ -82,7 +82,7 @@ const current = computed(() => docs[route.name]);
 
 * **to** - Урл страницы для подстановки в `<RouterLink>`
 
-Дополнительно существуют аттрибуты, которые начинаются с символа `$` ($children, $index, $siblings, $next, $prev, $branch, $parent) и содержат соответстующие страницы, отфильтрованные по параметру hidden в frontmatter.
+Дополнительно существуют аттрибуты, которые начинаются с символа `$` (`$children`, `$index`, `$siblings`, `$next`, `$prev`, `$branch`, `$parent`) и содержат соответстующие страницы, отфильтрованные по параметру hidden в frontmatter.
 
 <script setup>
 import { inject } from "vue";
