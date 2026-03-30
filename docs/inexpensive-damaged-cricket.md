@@ -25,6 +25,7 @@ script:
         }
       }
 yandex-verification: 99cae23e16630b17
+google-site-verification: C4k3xW-qwZv5BUeNoA1ieyMKTH69T-Tqx4oQk_SJGk4
 ---
 
 <ul id="menu" class="not-prose container mx-auto px-4 flex flex-wrap gap-3 w-full text-sm border-b-2 py-4 mt-2 mb-24 font-medium">
