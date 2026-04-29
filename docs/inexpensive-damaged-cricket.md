@@ -45,9 +45,13 @@ google-site-verification: C4k3xW-qwZv5BUeNoA1ieyMKTH69T-Tqx4oQk_SJGk4
 
 :::div{.container.mx-auto.px-4.py-8}
 
-:h3[🚀 Готовы попробовать Skald?]
+:h3[🚀 Готовы структурировать свои идеи?]
 
-Начните творить, создавать и развивать свои проекты **уже сегодня**! Skald – это ваш **надежный спутник** в мире текстов и веб-разработки.
+Начните с простого: создайте первую заметку. Если понадобится — добавьте стиль, интерактив или публикацию. Skald растёт вместе с вашими задачами.
+
+:el-button[Скачать бесплатно]{.not-prose type="primary" tag="a" href="https://github.com/skaldapp/skaldapp/releases/latest" target="_blank" rel="noopener noreferrer"}
+:el-button[Попробовать в браузере]{.not-prose type="primary" tag="a" href="https://skaldapp.github.io/skaldapp" target="_blank" rel="noopener noreferrer"}
+
 
 :::
 
@@ -55,7 +59,7 @@ google-site-verification: C4k3xW-qwZv5BUeNoA1ieyMKTH69T-Tqx4oQk_SJGk4
 
 :elBacktop
 
-<script setup lang="ts">
+<script setup lang="js">
 import { inject } from "vue";
 import ElementPlus from "element-plus";
 import { useDark, useToggle } from "@vueuse/core";
