@@ -103,12 +103,6 @@ app.component("Icon", Icon);
 body {
   @apply dark-bg-[var(--nord1)];
 }
-
-html:not(.dark) #dark,
-html.dark #light {
-  display: none !important;
-}
-
 </style>
 
 <style scoped lang="postcss">
