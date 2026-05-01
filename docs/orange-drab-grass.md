@@ -5,16 +5,6 @@ attrs:
   un-cloak: true
 ---
 
-<style scoped>
-html:not(.dark) picture img {
-  content: url("https://skaldapp.ru/uploads/light.png");
-}
-
-html.dark picture img {
-  content: url("https://skaldapp.ru/uploads/dark.png");
-}
-</style>
-
 # Skald
 
 **Skald** – редактор древовидного контента, где мысль обретает структуру
@@ -214,3 +204,13 @@ Skald выбирает простоту разработки и мгновенн
 🔗 **Официальный сайт**: [skaldapp.ru](https://skaldapp.ru)\
 🐙 **Исходный код**: [github.com/skaldapp/skaldapp](https://github.com/skaldapp/skaldapp)\
 📦 **Snap Store**: [snapcraft.io/skaldapp](https://snapcraft.io/skaldapp)
+
+<style scoped>
+html:not(.dark) picture img {
+  content: url("https://skaldapp.ru/uploads/light.png");
+}
+
+html.dark picture img {
+  content: url("https://skaldapp.ru/uploads/dark.png");
+}
+</style>
