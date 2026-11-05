@@ -46,13 +46,9 @@ google-site-verification: C4k3xW-qwZv5BUeNoA1ieyMKTH69T-Tqx4oQk_SJGk4
 
 :::div{.container.mx-auto.px-4.py-8}
 
-:h3[🚀 Готовы структурировать свои идеи?]
-
-Начните с простого: создайте первую заметку. Если понадобится — добавьте стиль, интерактив или публикацию. Skald растёт вместе с вашими задачами.
-
-:el-button[Скачать бесплатно]{.not-prose type="primary" tag="a" href="https://github.com/skaldapp/skaldapp/releases/latest" target="_blank" rel="noopener noreferrer"}
-:el-button[Попробовать в браузере]{.not-prose type="primary" tag="a" href="https://skaldapp.github.io/skaldapp" target="_blank" rel="noopener noreferrer"}
-
+🔗 **Официальный сайт**: [skaldapp.ru](https://skaldapp.ru)\
+🐙 **Исходный код**: [github.com/skaldapp/skaldapp](https://github.com/skaldapp/skaldapp)\
+📦 **Snap Store**: [snapcraft.io/skaldapp](https://snapcraft.io/skaldapp)
 
 :::
 
