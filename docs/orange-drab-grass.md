@@ -1,5 +1,5 @@
 ---
-title: Напишите в Markdown. Скопируйте на сервер. Сайт работает.
+title: Skald - markdown и vue редактор, генератор статических сайтов
 icon: twemoji:page-facing-up
 attrs:
   un-cloak: true
