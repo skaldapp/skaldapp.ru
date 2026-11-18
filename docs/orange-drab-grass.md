@@ -7,19 +7,14 @@ attrs:
 
 # Skald - markdown и vue редактор, генератор статических сайтов
 
-## Пишите в markdown, добавляйте магию vue — удобный редактор, который умеет больше
+![1.00](uploads/skald.jpg){.rounded-xl}
 
-***
+## 📝 Пишите в markdown, добавляйте магию vue — удобный редактор, который умеет больше
 
 ✌️ Два режима редактирования:
 
 * визуальный для markdown
 * с подсветкой синтаксиса для vue
-
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://skaldapp.ru/uploads/dark.png">
-<img alt="Skald" src="https://skaldapp.ru/uploads/light.png">
-</picture>
 
 🧩 Использование vue в markdown как в [vitepress](https://vitepress.dev/ru/guide/using-vue)\
 🧱 Можно использовать [синтаксис для компонентов в markdown](https://comark.dev/syntax/components)\
@@ -43,7 +38,12 @@ attrs:
 | 🐧 **Linux (AppImage)** | [Скачать](https://github.com/skaldapp/skaldapp/releases/latest) |
 | 🐧 **Ubuntu (Snap)**    | [Установить из Snapcraft](https://snapcraft.io/skaldapp)        |
 
-## Уровни функциональности
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://skaldapp.ru/uploads/dark.png">
+<img alt="Skald" src="https://skaldapp.ru/uploads/light.png">
+</picture>
+
+## 🪜 Уровни функциональности
 
 ### 🟢 Простой
 
