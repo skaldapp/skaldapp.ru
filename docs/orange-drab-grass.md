@@ -7,7 +7,7 @@ attrs:
 
 # Skald - markdown и vue редактор, генератор статических сайтов
 
-![1.00](uploads/skald.jpg){.rounded-xl}
+![1.00](https://skaldapp.ru/uploads/skald.jpg){.rounded-xl}
 
 ## 📝 Пишите в markdown, добавляйте магию vue — удобный редактор, который умеет больше
 

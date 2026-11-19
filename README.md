@@ -1,8 +1,8 @@
-# Skald
+# Skald - markdown и vue редактор, генератор статических сайтов
 
-#### markdown и vue редактор, генератор статических сайтов
+![1.00](https://skaldapp.ru/uploads/skald.jpg){.rounded-xl}
 
----
+## 📝 Пишите в markdown, добавляйте магию vue — удобный редактор, который умеет больше
 
 ✌️ Два режима редактирования:
 
@@ -36,7 +36,7 @@
 <img alt="Skald" src="https://skaldapp.ru/uploads/light.png">
 </picture>
 
-## Уровни функциональности
+## 🪜 Уровни функциональности
 
 ### 🟢 Простой
 
